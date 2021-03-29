@@ -1,0 +1,37 @@
+.comments {
+  position: relative;
+  @media (max-width: $pre-tablet) and (min-width: $desktop-width) {
+    @include container;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: var(--background);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: var(--white);
+    padding-top: 60px;
+    padding-bottom: 40px;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.comments__slider {
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: $after-tablet) {
+    @include container;
+    position: relative;
+  }
+}
+
+.comments__dots {
+  margin-top: 36px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

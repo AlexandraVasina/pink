@@ -1,0 +1,28 @@
+.fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid var(--border-color);
+    border-radius: 3px;
+    @include container;
+  }
+
+  &:first-child {
+    @media (min-width: $tablet-width) {
+      border: none;
+      margin-top: 82px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 68px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset + .fieldset {
+    margin-top: 65px;
+  }
+}

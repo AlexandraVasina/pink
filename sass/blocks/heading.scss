@@ -1,0 +1,73 @@
+.heading {
+  margin: 0;
+  padding: 0;
+
+  &--h2 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--black);
+
+    @media (min-width: $desktop-width) {
+      font-size: 30px;
+    }
+  }
+
+  &--h1 {
+    font-size: 24px;
+    color: var(--white);
+    text-align: center;
+    width: 228px;
+    font-weight: 300;
+    @include container;
+    padding-top: 36px;
+    padding-bottom: 51px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 50px;
+      width: 620px;
+      padding-top: 81px;
+      padding-bottom: 74px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 74px;
+      padding-bottom: 104px;
+    }
+  }
+
+  &--form {
+    line-height: 18px;
+    font-size: 14px;
+    color: var(--pink);
+    text-transform: uppercase;
+    padding-top: 42px;
+    @include container;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+      padding-right: 31px;
+      padding-left: 31px;
+      max-width: fit-content;
+      background-color: var(--white);
+      margin-top: -10px;
+    }
+  }
+
+  &--app {
+    @media (min-width: $tablet-width) {
+      padding-right: 25px;
+      padding-left: 25px;
+
+    }
+  }
+
+  &--goals {
+    @media (min-width: $tablet-width) {
+      br {
+        display: none;
+      }
+    }
+  }
+}

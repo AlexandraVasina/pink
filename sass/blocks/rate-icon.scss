@@ -1,0 +1,15 @@
+.rate-icon {
+  background-repeat: no-repeat;
+  background-position: 230px 50%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+
+  &--tick {
+    background-image: url("../img/icon-tick.svg");
+  }
+
+  &--cross {
+    background-image: url("../img/icon-cross.svg");
+  }
+}

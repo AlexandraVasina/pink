@@ -1,0 +1,64 @@
+.post {
+  background-color: var(--background);
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    width: 300px;
+  }
+
+  &--main {
+    background-color: var(--white);
+    padding-bottom: 0;
+    width: auto;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+      min-width: 100vw;
+    }
+
+    &__wr {
+      background-color: var(--background);
+      @include container;
+      padding-bottom: 26px;
+    }
+  }
+
+  &--main .post__img {
+    background-color: var(--white);
+
+    @media (min-width: $tablet-width) {
+      min-width: 100vw;
+    }
+  }
+}
+
+.post__img {
+  width: 100%;
+  display: block;
+}
+
+.post__author {
+  color: var(--black);
+  font-weight: 700;
+  font-size: 14px;
+  padding-top: 25px;
+}
+
+.post__text {
+  font-weight: 400;
+  font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 34px;
+  }
+}
+
+.post__text,
+.post__author {
+  padding-left: 17px;
+}

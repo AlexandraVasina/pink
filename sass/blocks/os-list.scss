@@ -1,0 +1,15 @@
+.os-list {
+  display: flex;
+  justify-content: space-between;
+  width: 204px;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  height: 65px;
+
+  &__element:hover {
+    perspective-origin: center;
+    perspective: 200px;
+  }
+}

@@ -1,0 +1,65 @@
+.rate-table {
+  @media (max-width: $pre-tablet) {
+    display: none;
+  }
+
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 58px;
+  border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    @include container;
+    border: 2px solid var(--border-color);
+    border-top: none;
+    border-left: none;
+    margin-top: 0;
+  }
+}
+
+.rate-table__line--first th {
+  @media (min-width: $tablet-width) {
+    padding-top: 19px;
+    padding-bottom: 37px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: 700;
+    border: 2px solid var(--border-color);
+    width: 152px;
+  }
+}
+
+.rate-table__line--first th:first-child {
+  background-color: transparent;
+  border: none;
+}
+
+.rate-table__line--first th:nth-child(2) {
+  border-radius: 4px 0 0 0;
+}
+
+.rate-table td:first-child {
+  padding-left: 22px;
+
+  @media (min-width: $tablet-width) and (max-width: $pre-de-tablet) {
+    padding-left: 0;
+  }
+}
+
+.rate-table td {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    line-height: 59px;
+    border: 2px solid var(--border-color);
+    width: 152px;
+    text-transform: none;
+    color: var(--blue);
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+
+.rate-table .current-slide {
+  padding-top: 0;
+}

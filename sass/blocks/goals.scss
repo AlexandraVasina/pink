@@ -1,0 +1,22 @@
+.goals {
+  background-color: var(--background);
+  padding-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+    background-color: var(--white);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: goals;
+  }
+}
+
+.goals__wr {
+  @include container;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

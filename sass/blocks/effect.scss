@@ -1,0 +1,78 @@
+.effect {
+    @media (max-width: $pre-tablet) {
+      display: none;
+    }
+    margin-top: 183px;
+    background-color: var(--background);
+    max-height: 220px;
+
+    @media (min-width: $after-tablet) {
+      margin-top: 233px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+      padding-top: 30px;
+      max-height: 500px;
+    }
+}
+
+.effect__wr {
+  position: relative;
+  top: -152px;
+  padding-top: 50px;
+  @include container;
+  background-image: url("../img/icon-clock.svg");
+  background-position: 0 70%;
+  background-repeat: no-repeat;
+  padding-bottom: 35px;
+  padding-left: 310px;
+
+  @media (min-width: $after-tablet) {
+    background-position: 0 10px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    padding-bottom: 135px;
+    padding-top: 65px;
+    background-position: 0 0;
+  }
+}
+
+.effect__link {
+  color: var(--pink);
+  text-decoration: underline;
+  margin-top: 24px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.effect__paragraph {
+  margin-top: 24px;
+  color: var(--blue);
+  font-size: 14px;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+
+    br {
+      display: block;
+    }
+  }
+}
+
+.effect__heading {
+  @media (min-width: $desktop-width) {
+    br {
+      display: none;
+    }
+  }
+}

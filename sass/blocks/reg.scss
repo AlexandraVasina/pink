@@ -1,0 +1,95 @@
+.reg {
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px;
+  align-items: center;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1 / 2;
+    flex-direction: column;
+    width: auto;
+    margin-left: 45px;
+  }
+}
+
+.reg li {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+    padding-left: 7px;
+    padding-right: 7px;
+    align-items: center;
+    height: 69px;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  }
+}
+
+.reg__btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+
+  svg {
+    height: 44px;
+
+    @media (min-width: $tablet-width) {
+      height: 22px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+
+    path {
+      opacity: 1;
+      fill: var(--pink);
+    }
+  }
+
+  &--resize svg {
+    width: 44px;
+
+    @media (min-width: $tablet-width) {
+      width: 22px;
+    }
+  }
+
+  &--fill svg {
+    width: 48px;
+
+    @media (min-width: $tablet-width) {
+      width: 24px;
+    }
+  }
+
+  &--contr svg {
+    width: 32px;
+
+    @media (min-width: $tablet-width) {
+      width: 19px;
+      padding-left: 4px;
+    }
+  }
+
+  &--active path{
+    opacity: 1;
+    fill: var(--pink);
+  }
+}
+
+.reg__input {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    @include input;
+    width: 202px;
+
+    &::-webkit-slider-thumb {
+      @include thumb;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.comment-form__text {
+  width: 100%;
+  resize: none;
+  font-size: 18px;
+  color: var(--blue);
+  margin-top: 22px;
+  text-align: left;
+  height: 197px;
+  padding-left: 20px;
+  padding-top: 20px;
+  border: 2px solid var(--border-color);
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    width: 496px;
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+
+  @media (min-width: $after-tablet) {
+    width: 816px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 880px;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    border-color: var(--blue);
+  }
+}
+
+.comment-form__text::placeholder {
+  color: var(--blue);
+  text-align: left;
+}
+
+.comment-form {
+  @include container;
+
+  @media (min-width: $tablet-width) {
+    order: 6;
+    min-height: 290px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: comment;
+  }
+}

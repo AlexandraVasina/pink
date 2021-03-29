@@ -1,0 +1,21 @@
+.dot,
+.dots button {
+  font-size: 0;
+  height: 6px;
+  width: 6px;
+  border: none;
+  background-color: rgba(40, 54, 69, 0.3);
+  border-radius: 100px;
+  padding: 0;
+}
+
+
+
+.dots {
+  margin-right: auto;
+  margin-left: auto;
+  width: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

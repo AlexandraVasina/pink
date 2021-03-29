@@ -1,0 +1,15 @@
+.personal-data {
+    padding-bottom: 44px;
+
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      width: 440px;
+      grid-area: data;
+      margin-right: 124px;
+      padding-bottom: 0;
+    }
+}

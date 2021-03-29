@@ -1,0 +1,169 @@
+.features {
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-position: 0 -34px;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) and (max-width: $pre-desktop) {
+    background-image: none;
+    background-color: var(--background);
+    position: relative;
+    padding-top: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 715px;
+    background-position: auto;
+  }
+}
+
+@media (max-width: $after-tablet) {
+  .features__list li + li {
+    margin-top: 46px;
+  }
+}
+
+.features__list li:first-child {
+  @media (max-width: $pre-tablet) {
+    margin-top: 30px;
+  }
+}
+
+.features__list {
+  text-align: center;
+  padding-bottom: 5px;
+  min-height: 816px;
+  padding-top: 85px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    @include container;
+    min-height: 480px;
+  }
+
+  @media (min-width: $after-tablet) {
+    min-height: 715px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.features__list::after {
+    content: "";
+    width: 157px;
+    height: 277px;
+    background-image: url("../img/screen-smile.png"), url("../img/iphone.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: 9px 37px, 0 0;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    left: 50%;
+    overflow-x: hidden;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/iphone-tablet.png");
+      transform: none;
+      background-position: 0 50px;
+      left: 0;
+      width: 278px;
+      height: 520px;
+    }
+
+    @media (min-width: $after-tablet) {
+      width: 0;
+    }
+}
+
+.features__list li{
+  width: 100%;
+
+  @media (max-width: $pre-tablet) {
+    @include container;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 310px;
+    text-align: left;
+    margin-left: auto;
+  }
+
+  @media (min-width: $after-tablet) {
+    padding-top: 283px;
+    margin-top: 37px;
+    position: relative;
+    width: 300px;
+    min-height: 191px;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+.feature__paragraph {
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: $after-tablet) {
+    max-width: 252px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
+  }
+}
+
+@mixin before-feature {
+  content: "";
+  background-position: 10px 42px, 0 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 300px;
+  width: 186px;
+  transform: translate(-50%, 0);
+  left: 50%;
+  top: 0;
+}
+
+@media (min-width: $after-tablet) {
+  .features__list li:first-child::before {
+    @include before-feature;
+    background-image:  url("../img/screen-desktop-1.png"), url("../img/iphone-desktop.png");
+  }
+
+  .features__list li:nth-child(2)::before {
+    @include before-feature;
+    background-image: url("../img/screen-desktop-2.png"), url("../img/iphone-desktop.png");
+  }
+
+  .features__list li:last-child::before {
+    @include before-feature;
+    background-image: url("../img/screen-desktop-3.png"), url("../img/iphone-desktop.png");
+  }
+}
+
+.feature__heading {
+  @media (min-width: $after-tablet) {
+    line-height: 30px;
+    position: relative;
+    padding-top: 70px
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px
+  }
+}
+
+.feature__heading::before {
+  @media (min-width: $after-tablet) {
+    content: "";
+    background-image: url("../img/shadow.png");
+    width: 300px;
+    height: 17px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

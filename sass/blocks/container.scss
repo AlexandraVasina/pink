@@ -1,0 +1,21 @@
+@mixin container {
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $after-tablet) {
+    width: 936px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1000px;
+  }
+}
+
+.container {
+  @include container;
+}

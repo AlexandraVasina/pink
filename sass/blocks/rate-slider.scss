@@ -1,0 +1,54 @@
+.rate-slider {
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &__s {
+    text-transform: uppercase;
+    background-color: var(--background);
+    border: 2px solid var(--border-color);
+    border-top: none;
+    min-width: 280px;
+
+    &--second {
+      position: relative;
+    }
+
+    &--second::after {
+      content: "ХИТ";
+      transform: rotate(-45deg);
+      color: var(--white);
+      font-weight: 400;
+      font-family:  "Open Sans", "Arial", sans-serif;
+      position: absolute;
+      top: 17px;
+      left: 12px;
+    }
+
+    &--second::before {
+      content: "";
+      background-image: url("../img/icon-hit.svg");
+      width: 74px;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      height: 74px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__s div {
+    border-top: 2px solid var(--border-color);
+  }
+
+  &__option {
+    padding-top: 19px;
+    padding-bottom: 35px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: 700;
+    text-align: center;
+  }
+}

@@ -1,0 +1,33 @@
+.networks__link {
+  width: 51px;
+  height: 51px;
+  border: 3px solid var(--grey);
+  border-radius: 100px;
+  text-align: center;
+  position: relative;
+}
+
+.networks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 172px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.networks__link a {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.networks__link--ytb a {
+  top: 49%;
+  left: 54%;
+}

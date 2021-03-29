@@ -1,0 +1,24 @@
+.footer__logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 145px;
+
+  @media (max-width: $pre-tablet) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.footer {
+  width: 172px;
+  margin-top: 40px;
+  padding-bottom: 25px;
+  @include container;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

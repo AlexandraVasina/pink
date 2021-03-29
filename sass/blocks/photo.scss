@@ -1,0 +1,15 @@
+.photo__paragraph {
+  @include first-paragraph;
+  padding-bottom: 60px;
+  padding-top: 54px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 85px;
+    padding-top: 100px;
+  }
+
+  &--call {
+    padding-bottom: 50px;
+    padding-top: 49px;
+  }
+}

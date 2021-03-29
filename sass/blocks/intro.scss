@@ -1,0 +1,51 @@
+.intro {
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    @include container;
+    z-index: 2;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $pre-desktop) {
+    padding-right: 300px;
+    min-height: 619px;
+    position: relative;
+    text-align: left;
+    padding-top: 62px;
+    overflow: hidden;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    margin-right: auto;
+    text-align: center;
+    flex-grow: 1;
+    padding-top: 100px;
+    min-height: 750px;
+  }
+}
+
+.intro::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    background-image: url("../img/intro-phone-tablet.png"), url("../img/intro-screen.png");
+    height: 545px;
+    width: 660px;
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+    background-position: 0 0, 355px 55px;
+    background-size: 95% 100%, 190px 345px;
+    background-repeat: no-repeat;
+    z-index: -1;
+    overflow-x: hidden;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -30px;
+    width: 900px;
+    height: 645px;
+    background-size: 95% 100%, 255px 412px;
+    background-position: 0 0, 482px 60px;
+  }
+}

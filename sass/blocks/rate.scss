@@ -1,0 +1,39 @@
+.rate {
+  background-image: url("../img/background.png");
+  min-height: 506px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding-top: 157px;
+  padding-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 386px;
+    background-image: none;
+    background-color: var(--background);
+    padding-top: 110px;
+  }
+}
+
+.rate__dots {
+  margin-top: 45px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+th.rate__first-block {
+  background-color: var(--background);
+  border: none;
+}
+
+.rate__line:first-child {
+  border-radius: 1px 0px 0px 0px;
+}
+
+.rate__table img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
